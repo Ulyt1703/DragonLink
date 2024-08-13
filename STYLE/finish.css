@@ -1,0 +1,603 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Inter';
+}
+
+body{
+    background: linear-gradient(90deg, rgb(4, 54, 4), rgb(2, 37, 2));
+    overflow: hidden;
+}
+.txt{
+    position: absolute;
+    font-size: 65px;
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+    background: linear-gradient(90deg, rgb(4, 54, 4), rgb(2, 37, 2));
+    text-align: center;
+    padding: 300px;
+    color: rgb(43, 255, 0);
+    font-weight: 580;
+    font-family: "Roboto";
+    user-select: none;
+}
+.txt.animation{
+    z-index: 9999;
+    opacity: 1;
+}
+.Wrapper{
+    z-index: 0;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 27.5px;
+    left: 10px;
+    cursor: pointer;
+}
+.Bulb{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #818cf8;
+    border: solid 10px #1e40af;
+    border-radius: 100%;
+    box-sizing: border-box;
+}
+.Cap{
+    position: absolute;
+    width: 39px;
+    height: 27.5px;
+    background: #fde047;
+    left: 50%;
+    transform: translate(-50%, -50px);
+    border: 7px solid #1e40af;
+    border-radius: 8px;
+    box-sizing: border-box;
+    top: 21px;
+}
+.Dark-red{
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    background: #4f46e5;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 100%;
+    box-shadow: inset 0 -4rem 0 0 #1e40af;
+}
+.Father-logo{
+    position: relative;
+    width: 100px;
+}
+
+.Logo-png{
+    z-index: 1;
+    position: absolute;
+    padding: 12px 0 0 10px;
+    width: 70px;
+    top: 38px;
+    left: 21px;
+}
+.Dragon {
+    position: relative;
+}
+
+.Dragon-background {
+    z-index: -1;
+    position: absolute;
+    left: 31.81%;
+    top: 88px;
+    width: 550px;
+    height: 552px;
+    user-select: none;
+}
+.title-finish{
+    font-size: 40px;
+    color: lime;
+    padding: 250px 300px 300px 300px;
+    text-align: center;
+    user-select: none;
+}
+
+/* ADAPTYV */
+@media (max-width: 1232px){
+    .Dragon {
+        position: relative;
+    }
+    
+    .Dragon-background {
+        z-index: -1;
+        position: absolute;
+        left: 29.5%;
+        top: 88px;
+        width: 550px;
+        height: 552px;
+        user-select: none;
+    }
+}
+@media (max-width: 1146px){
+    .Dragon {
+        position: relative;
+    }
+    
+    .Dragon-background {
+        z-index: -1;
+        position: absolute;
+        left: 27%;
+        top: 88px;
+        width: 550px;
+        height: 552px;
+        user-select: none;
+    }
+}
+@media (max-width: 1085px){
+    .Dragon {
+        position: relative;
+    }
+    
+    .Dragon-background {
+        z-index: -1;
+        position: absolute;
+        left: 25%;
+        top: 88px;
+        width: 550px;
+        height: 552px;
+        user-select: none;
+    }
+}
+@media (max-width: 990px){
+    .Dragon {
+        position: relative;
+    }
+    
+    .Dragon-background {
+        z-index: -1;
+        position: absolute;
+        left: 23%;
+        top: 88px;
+        width: 550px;
+        height: 552px;
+        user-select: none;
+    }
+    .title-finish{
+        font-size: 40px;
+        color: lime;
+        padding: 200px 300px 300px 300px;
+        text-align: center;
+        user-select: none;
+    }
+}
+@media (max-width: 905px){
+    .txt{
+        position: absolute;
+        font-size: 65px;
+        width: 100%;
+        height: 100vh;
+
+        background: linear-gradient(90deg, rgb(4, 54, 4), rgb(2, 37, 2));
+        text-align: center;
+        padding: 300px 300px 300px 250px;
+        color: rgb(43, 255, 0);
+        font-weight: 580;
+        font-family: "Roboto";
+    }
+    .title-finish{
+        font-size: 33px;
+        font-weight: bolder;
+        color: lime;
+        padding: 230px 300px 300px 300px;
+        text-align: center;
+        user-select: none;
+    }
+}
+@media (max-width: 896px){
+    .Dragon {
+        position: relative;
+    }
+    
+    .Dragon-background {
+        z-index: -1;
+        position: absolute;
+        left: 20.5%;
+        top: 88px;
+        width: 550px;
+        height: 552px;
+        user-select: none;
+    }
+}
+@media (max-width: 846px){
+    .title-finish{
+        font-size: 29px;
+        font-weight: bolder;
+        color: lime;
+        padding: 140px 300px 300px 300px;
+        text-align: center;
+        user-select: none;
+    }
+}
+@media (max-width: 808px){
+    .txt{
+        position: absolute;
+        font-size: 65px;
+        width: 100%;
+        height: 100vh;
+        opacity: 0;
+        background: linear-gradient(90deg, rgb(4, 54, 4), rgb(2, 37, 2));
+        text-align: center;
+        padding: 300px 300px 300px 220px;
+        color: rgb(43, 255, 0);
+        font-weight: 580;
+        font-family: "Roboto";
+}
+}
+@media (max-width: 778px){
+    .title-finish{
+        font-size: 25px;
+        font-weight: bolder;
+        color: lime;
+        padding: 185px 300px 300px 300px;
+        text-align: center;
+        user-select: none;
+    }
+    .Dragon {
+        position: relative;
+    }
+    
+    .Dragon-background {
+        z-index: -1;
+        position: absolute;
+        left: 14.5%;
+        top: 88px;
+        width: 550px;
+        height: 552px;
+        user-select: none;
+    }
+}
+@media (max-width: 767px){
+    .txt{
+        position: absolute;
+        font-size: 65px;
+        width: 100%;
+        height: 100vh;
+        opacity: 0;
+        background: linear-gradient(90deg, rgb(4, 54, 4), rgb(2, 37, 2));
+        text-align: center;
+        padding: 300px 300px 300px 200px;
+        color: rgb(43, 255, 0);
+        font-weight: 580;
+        font-family: "Roboto";
+}
+}
+@media (max-width: 745px){
+    .title-finish{
+        font-size: 23px;
+        font-weight: bolder;
+        color: lime;
+        padding: 200px 300px 300px 300px;
+        text-align: center;
+        user-select: none;
+    }
+}
+@media (max-width: 732px){
+    .txt{
+        position: absolute;
+        font-size: 65px;
+        width: 100%;
+        height: 100vh;
+        opacity: 0;
+        background: linear-gradient(90deg, rgb(4, 54, 4), rgb(2, 37, 2));
+        text-align: center;
+        padding: 300px 300px 300px 180px;
+        color: rgb(43, 255, 0);
+        font-weight: 580;
+        font-family: "Roboto";
+}
+}
+@media (max-width: 730px){
+    .title-finish{
+        font-size: 26px;
+        font-weight: bolder;
+        color: lime;
+        padding: 200px 0 0 20px;
+        text-align: start;
+        user-select: none;
+    }
+    .Dragon {
+        position: relative;
+    }
+    
+    .Dragon-background {
+        z-index: -1;
+        position: absolute;
+        left: 10%;
+        top: 88px;
+        width: 550px;
+        height: 552px;
+        user-select: none;
+    }
+}
+@media (max-width: 698px){
+    .txt{
+        position: absolute;
+        font-size: 65px;
+        width: 100%;
+        height: 100vh;
+        opacity: 0;
+        background: linear-gradient(90deg, rgb(4, 54, 4), rgb(2, 37, 2));
+        text-align: center;
+        padding: 300px 300px 300px 160px;
+        color: rgb(43, 255, 0);
+        font-weight: 580;
+        font-family: "Roboto";
+    }
+}
+@media (max-width: 651px){
+    .txt{
+        position: absolute;
+        font-size: 65px;
+        width: 100%;
+        height: 100vh;
+        opacity: 0;
+        background: linear-gradient(90deg, rgb(4, 54, 4), rgb(2, 37, 2));
+        text-align: center;
+        padding: 300px 300px 300px 130px;
+        color: rgb(43, 255, 0);
+        font-weight: 580;
+        font-family: "Roboto";
+    }
+}
+@media (max-width: 622px){
+    .txt{
+        position: absolute;
+        font-size: 65px;
+        width: 100%;
+        height: 100vh;
+        opacity: 0;
+        background: linear-gradient(90deg, rgb(4, 54, 4), rgb(2, 37, 2));
+        text-align: center;
+        padding: 300px 300px 300px 115px;
+        color: rgb(43, 255, 0);
+        font-weight: 580;
+        font-family: "Roboto";
+    }
+}
+@media (max-width: 600px){
+    .title-finish{
+        font-size: 22px;
+        font-weight: bolder;
+        color: lime;
+        padding: 280px 0 0 20px;
+        text-align: start;
+        user-select: none;
+    }
+    .Dragon {
+        position: relative;
+    }
+    
+    .Dragon-background {
+        z-index: -1;
+        position: absolute;
+        left: 4%;
+        top: 88px;
+        width: 550px;
+        height: 552px;
+        user-select: none;
+    }
+}
+@media (max-width: 582px){
+    .txt{
+        position: absolute;
+        font-size: 65px;
+        width: 100%;
+        height: 100vh;
+        opacity: 0;
+        background: linear-gradient(90deg, rgb(4, 54, 4), rgb(2, 37, 2));
+        text-align: center;
+        padding: 300px 300px 300px 100px;
+        color: rgb(43, 255, 0);
+        font-weight: 580;
+        font-family: "Roboto";
+    }
+}
+@media (max-width: 565px){
+    .title-finish{
+        font-size: 22px;
+        font-weight: bolder;
+        color: lime;
+        padding: 280px 0 0 20px;
+        text-align: start;
+        user-select: none;
+    }
+    .Dragon-background {
+        display: none;
+    }
+}
+@media (max-width: 532px){
+    .txt{
+        position: absolute;
+        font-size: 65px;
+        width: 100%;
+        height: 100vh;
+        opacity: 0;
+        background: linear-gradient(90deg, rgb(4, 54, 4), rgb(2, 37, 2));
+        text-align: center;
+        padding: 300px 300px 300px 80px;
+        color: rgb(43, 255, 0);
+        font-weight: 580;
+        font-family: "Roboto";
+    }
+}
+@media(max-width: 503px){
+    .title-finish{
+        font-size: 20px;
+        font-weight: bolder;
+        color: lime;
+        padding: 280px 0 0 10px;
+        text-align: start;
+        user-select: none;
+    }
+}
+@media (max-width: 495px){
+    .txt{
+        position: absolute;
+        font-size: 65px;
+        width: 100%;
+        height: 100vh;
+        opacity: 0;
+        background: linear-gradient(90deg, rgb(4, 54, 4), rgb(2, 37, 2));
+        text-align: center;
+        padding: 300px 300px 300px 60px;
+        color: rgb(43, 255, 0);
+        font-weight: 580;
+        font-family: "Roboto";
+    }  
+}
+@media (max-width: 455px){
+    .txt{
+        position: absolute;
+        font-size: 65px;
+        width: 100%;
+        height: 100vh;
+        opacity: 0;
+        background: linear-gradient(90deg, rgb(4, 54, 4), rgb(2, 37, 2));
+        text-align: center;
+        padding: 300px 300px 300px 40px;
+        color: rgb(43, 255, 0);
+        font-weight: 580;
+        font-family: "Roboto";
+    }
+}
+@media (max-width: 449px){
+    .title-finish{
+        font-size: 18px;
+        font-weight: bolder;
+        color: lime;
+        padding: 290px 0 0 10px;
+        text-align: start;
+        user-select: none;
+    }
+}
+@media (max-width: 413px){
+    .txt{
+        position: absolute;
+        font-size: 65px;
+        width: 100%;
+        height: 100vh;
+        opacity: 0;
+        background: linear-gradient(90deg, rgb(4, 54, 4), rgb(2, 37, 2));
+        text-align: center;
+        padding: 300px 300px 300px 20px;
+        color: rgb(43, 255, 0);
+        font-weight: 580;
+        font-family: "Roboto";
+    }
+}
+@media (max-width: 378px){
+    .title-finish{
+        font-size: 15px;
+        font-weight: bolder;
+        color: lime;
+        padding: 290px 0 0 10px;
+        text-align: start;
+        user-select: none;
+    }
+    .txt{
+        position: absolute;
+        font-size: 65px;
+        width: 100%;
+        height: 100vh;
+        opacity: 0;
+        background: linear-gradient(90deg, rgb(4, 54, 4), rgb(2, 37, 2));
+        text-align: center;
+        padding: 300px 300px 300px 10px;
+        color: rgb(43, 255, 0);
+        font-weight: 580;
+        font-family: "Roboto";
+    }
+}
+@media (max-width: 365px){
+    .txt{
+        position: absolute;
+        font-size: 55px;
+        width: 100%;
+        height: 100vh;
+        opacity: 0;
+        background: linear-gradient(90deg, rgb(4, 54, 4), rgb(2, 37, 2));
+        text-align: center;
+        padding: 300px 300px 300px 25px;
+        color: rgb(43, 255, 0);
+        font-weight: 580;
+        font-family: "Roboto";
+        
+}
+}
+@media (max-width: 356px){
+    .title-finish{
+        font-size: 14px;
+        font-weight: bolder;
+        color: lime;
+        padding: 290px 0 0 10px;
+        text-align: start;
+        user-select: none;
+    }
+}
+@media (max-width: 332px){
+    .txt{
+        position: absolute;
+        font-size: 55px;
+        width: 100%;
+        height: 100vh;
+        opacity: 0;
+        background: linear-gradient(90deg, rgb(4, 54, 4), rgb(2, 37, 2));
+        text-align: center;
+        padding: 300px 300px 300px 10px;
+        color: rgb(43, 255, 0);
+        font-weight: 580;
+        font-family: "Roboto";
+}
+}
+@media (max-width: 313px){
+    .title-finish{
+        font-size: 13px;
+        font-weight: bolder;
+        color: lime;
+        padding: 290px 0 0 10px;
+        text-align: start;
+        user-select: none;
+    }
+    .txt{
+        position: absolute;
+        font-size: 55px;
+        width: 100%;
+        height: 100vh;
+        opacity: 0;
+        background: linear-gradient(90deg, rgb(4, 54, 4), rgb(2, 37, 2));
+        text-align: center;
+        padding: 300px 300px 300px 5px;
+        color: rgb(43, 255, 0);
+        font-weight: 580;
+        font-family: "Roboto";
+    }
+}
+@media (max-width: 304px){
+    .txt{
+        position: absolute;
+        font-size: 53px;
+        width: 100%;
+        height: 100vh;
+        opacity: 0;
+        background: linear-gradient(90deg, rgb(4, 54, 4), rgb(2, 37, 2));
+        text-align: center;
+        padding: 300px 300px 300px 8px;
+        color: rgb(43, 255, 0);
+        font-weight: 580;
+        font-family: "Roboto";
+    }
+}

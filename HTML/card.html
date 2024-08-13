@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card__page</title>
+    <link href="https://fonts.googleapis.com/css?family=Rubik+Bubbles:regular" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Pirata+One:regular" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Anton:regular" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="../STYLE/card.css">
+</head>
+<body>
+
+    <p class="text">DragonLink</p>
+
+    <a href="../index.html">
+        <div class="father__logo">
+            <img data-aos-delay="450" data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="750" class="logo__png" src="../image/dragon__logo.png" alt="">
+        </div>
+    </a>
+    <a href="../index.html">
+        <div data-aos-delay="450" data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="750" class="wrapper">
+            <div class="bulb">
+                <div class="cap"></div>
+                <div class="dark-red"></div>
+            </div>
+        </div>
+    </a>
+        <div class="dragon__father">
+            <img data-aos-delay="450" data-aos="zoom-in-down" class="dragon-bckg" src="../image/dragon.png" alt="">
+        </div>
+        <header class="header__body">
+            <button data-aos-delay="450" data-aos="fade-down" class="hamburger hamburger--spring is-active" type="button">
+                <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+                </span>
+            </button>
+
+            <div class="Navbar">
+                <ul class="List">
+                    <li style="--i:6;" data-icon="&#xf8" class="Navbar__sections">
+                        <a href="../index.html" class="Txt__navbar">Home</a>
+                    </li>
+                    <li style="--i:5;" data-icon="&#x277" class="Navbar__sections">
+                        <a href="../HTML/regestration.html" class="Txt__navbar">Registration</a>
+                    </li>
+                    <li style="--i:4;" data-icon="&#xf0" class="Navbar__sections">
+                        <a href="../HTML/card.html" class="Txt__navbar">Card</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+    <main class="register__card">
+        <div class="registration">
+            <form data-aos-delay="450" data-aos="zoom-in" action="" class="registration-form">
+                    <div class="user__box">
+                        <span class="icon__User"><i data-feather="user"></i></span>
+                        <input type="text" name="Username" placeholder="Name" class="registration__username" id="registration-name"  />
+                        <label class="Placeholder__text">Username</label>
+                    </div>
+                    <div class="user__box">
+                        <span class="icon__Surname"><i data-feather="users"></i></span>
+                        <input type="text" name="Surname" placeholder="Surname" class="registration__Surname" id="registration-surname" checked />
+                        <label class="Placeholder__text">Surname</label>
+                    </div>
+                    <div class="user__box">
+                        <label class="number-text">Generation number card</label>
+                        <a class="registration__button-2" type="submit" href="#">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Generation
+                        </a>
+                    </div>
+                    <div class="user-box">
+                        <label class="CVV-text">Generation CVV code</label>
+                    </div>
+                    <a class="registration__button" type="submit" href="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Generation
+                    </a>
+                    <div class="user-box">
+                        <input type="date" class="form-date" checked>
+                    </div>
+                    <a class="registration__button-3" type="submit" href="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Issue a card
+                    </a>
+                </div>               
+            </form>
+        </div>
+            <div class="card__register">
+                <p class="C__card">C</p>
+                <p class="C__card-2">C</p>
+                <p class="ard__card">ard</p>
+                <p class="name__of__card">redit</p>
+                <img class="bank__img" src="../image/Orange-blue dragon.png" alt="">
+                <p class="name__of__bank">DragonLink</p>
+                <img src="../image/pngwing.com(6).png" alt="" class="dragon-background">
+                <img src="../image/card.png" class="card-chip" alt="">
+                <p class="number__card"></p>
+                <div class="father-name">
+                    <p class="name__user"></p>
+                </div>
+                <div class="father-surname">                    
+                    <p class="surname__user"></p>
+                </div>
+                <p class="card__date"></p>
+            </div>
+            <div class="card__back">
+                <div class="background-black"></div>
+                <div class="background-gray"></div>
+                <p class="CVV__code"></p>
+            </div>
+    </main>
+
+    <div class="modal-name">
+        <img src="../image/icons8-customer-50.png" alt="" class="img-name">
+        <p class="text-name">The name must begin with a capital letter</p>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        feather.replace();
+    </script>
+    <script src="../SCRIPT/card.js"></script>
+    <script src="../SCRIPT/scroll.js"></script>
+    <script src="../SCRIPT/load.js"></script>
+</body>
+</html>

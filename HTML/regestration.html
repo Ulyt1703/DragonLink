@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration__html</title>
+    <link rel="stylesheet" href="../STYLE/regestration.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik+Bubbles:regular" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+
+    <p class="TXT">DragonLink</p>
+
+    <a href="../index.html">
+        <div class="father__logo">
+            <img data-aos-delay="450" data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="750" class="logo__png" src="../image/dragon__logo.png" alt="">
+        </div>
+    </a>
+    <a href="../index.html">
+        <div data-aos-delay="450" data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="750" class="wrapper">
+            <div class="bulb">
+                <div class="cap"></div>
+                <div class="dark-red"></div>
+            </div>
+        </div>
+    </a>
+    <div class="dragon">
+        <img data-aos-delay="450" data-aos="zoom-in-down" class="dragon-background" src="../image/dragon.png" alt="">
+    </div>
+    <header class="header-Hamburger">
+        <input class="header__Mobile" type="checkbox" id="mobile">
+        <label class="header__Label" for="mobile">
+            <span class="mobile-Line"></span>
+        </label>
+        <div class="Navbar">
+                <ul class="List">
+                    <li style="--i:6;" data-icon="&#xf8" class="Navbar__sections">
+                        <a href="../index.html" class="Txt__navbar">Home</a>
+                    </li>
+                    <li style="--i:5;" data-icon="&#x277" class="Navbar__sections">
+                        <a href="../HTML/regestration.html" class="Txt__navbar">Registration</a>
+                    </li>
+                    <li style="--i:4;" data-icon="&#xf0" class="Navbar__sections">
+                        <a href="../HTML/card.html" class="Txt__navbar">Card</a>
+                    </li>
+                </ul>
+            </div>
+    </header>
+    <div class="Navbar">
+        <ul class="List">
+            <li style="--i:6;" data-icon="&#xf8" class="Navbar__sections">
+                <a href="../index.html" class="Txt__navbar">Home</a>
+            </li>
+            <li style="--i:5;" data-icon="&#x277" class="Navbar__sections">
+                <a href="../HTML/regestration.html" class="Txt__navbar">Registration</a>
+            </li>
+            <li style="--i:4;" data-icon="&#xf0" class="Navbar__sections">
+                <a href="../HTML/card.html" class="Txt__navbar">Card</a>
+            </li>
+        </ul>
+    </div>
+<div data-aos-delay="600" data-aos="zoom-in-down" class="regestration">
+    <form action="" class="regestration-form">
+            <h1 class="form__title">Log in</h1>
+            <div class="user-box">
+                <span class="icon__user"><i data-feather="user"></i></span>
+                <input type="text" name="username" placeholder="Name" id="username__complete" class="regestration__username"   />
+                <label class="Placeholder__txt">Username</label>
+            </div>
+            <div class="user-box">
+                <span class="icon__email"><i data-feather="mail"></i></span>
+                <input type="email" name="email" placeholder="@gmail.com" id="email__complete" class="regestration__email" checked />
+                <label class="Placeholder__txt">Email</label>
+            </div>
+            <div class="user-box">
+                <span class="icon__password"><i data-feather="lock"></i></span>
+                <input type="password" name="password" placeholder="Password" id="Password__complete" class="regestration__password" required />
+                <label class="Placeholder__txt">Password</label>
+            </div>
+            <div class="user-box-4">
+                <span class="icon__tel"><i data-feather="smartphone"></i></span>
+                <input type="tel" name="tel" placeholder="+380" class="regestration__tel" id="telephone" method="post" checked />
+                <label class="Placeholder__txt-4">Number</label>
+            </div> 
+            <a class="regestration__button" type="submit" href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Register
+            </a>              
+    </form>
+</div>
+    <div class="modal">
+        <img class="modal__img" src="../image/icons8-human-91.png" alt="">
+        <p class="modal__text">Username must contain at least 1 character and start with a capital letter</p>
+    </div>
+    <div class="modal__email">
+        <img src="../image/icons8-human-50.png" alt="" class="modal__email__img">
+        <p class="modal__email__text">The email address must contain @gmail.com</p>
+    </div>
+    <div class="modal__password">
+        <img src="../image/icons8-human-64.png" alt="" class="modal__password__img">
+        <p class="modal__password__text">The password must be at least 7 characters long</p>
+    </div>
+    <div class="modal__tel">
+        <img src="../image/icons8-human-50.png" alt="" class="modal__tel__img">
+        <p class="modal__tel__text">The phone number must start with the region code and contain 13 characters</p>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="../SCRIPT/regestration.js"></script>
+    <script src="../SCRIPT/load.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
